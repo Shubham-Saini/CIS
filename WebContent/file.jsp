@@ -18,7 +18,7 @@
 	   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js" ></script>
 		<script src="http://malsup.github.com/jquery.form.js" ></script>
 		<script src="js/fileUploadScript.js" ></script>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	     <script src="codebase/dhtmlxvault.js"></script>
 	     <script src="codebase/swfobject.js"></script> 
 	     <link rel="stylesheet" type="text/css" href="codebase/dhtmlx.css">
