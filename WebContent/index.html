@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript">
+	function callServlet(arg)
+	{
+		document.location.href = "AuthHandler?caller="+arg;
+	}
+	function html(arg)
+	{
+		document.location.href = arg+".jsp";
+	}
+	function nn(arg)
+	{
+		document.location.href = "DBHandler?caller="+arg;
+	}
+	function ser(arg)
+	{
+		document.location.href = "Hand?caller="+arg;
+	}
+</script>
+<title>Insert title here.</title>
+</head>
+<body>
+<h1> Welcome to Drive Integration Services.</h1>
+</body>
+<input type="button" name="register" value="Register" onClick="html('Register')"/>
+<input type="button" name="login" value="Login" onClick="html('LReg')"/>
+<input type="button" name="login" value="Email" onClick="callServlet('email')"/>
+<input type="button" name="dropbox" value="Dropbox" onClick="nn('drop')"/>
+<input type="button" name="onedrive" value="One Drive" onClick="ser('one')"/>
+</html>

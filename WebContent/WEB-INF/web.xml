@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>DriveProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Authorization servlet</servlet-name>
+    <servlet-class>com.drive.oauth.AuthorizationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Authorization servlet</servlet-name>
+    <url-pattern>/AuthHandler</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>File uploads servlet</servlet-name>
+    <servlet-class>com.drive.oauth.FileUpload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>File uploads servlet</servlet-name>
+    <url-pattern>/FileUpload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>File upload servlet</servlet-name>
+    <servlet-class>com.drive.oauth.UploadFiles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>File upload servlet</servlet-name>
+    <url-pattern>/UploadFiles</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <description>Location to store files</description>
+    <param-name>file-upload</param-name>
+    <param-value>H:\Java\Web Development\Apache Tomcat 7.0\webapps\Data\</param-value>
+  </context-param>
+  <context-param>
+    <description>Google ClientID</description>
+    <param-name>GoogleId</param-name>
+    <param-value>838574006339-pbr8epb99e4o69nc7qb4ahii740e6leg.apps.googleusercontent.com</param-value>
+  </context-param>
+  <context-param>
+    <description>Google ClientSecret</description>
+    <param-name>GoogleSecret</param-name>
+    <param-value>yQXpfo-2sc81TKut3iLJ2Aw5</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Validation Servlet</servlet-name>
+    <servlet-class>com.drive.oauth.ValidateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Validation Servlet</servlet-name>
+    <url-pattern>/ValidHandler</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OneDrive servlet</servlet-name>
+    <servlet-class>com.drive.oauth.Handler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OneDrive servlet</servlet-name>
+    <url-pattern>/Hand</url-pattern>
+  </servlet-mapping>
+  <error-page>
+		<error-code>404</error-code>
+		<location>/Error404.jsp</location>
+	</error-page>
+</web-app>

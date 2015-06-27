@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbar>
+    <item id="reload" type="button" img="reload.png"  text="Refresh"/>
+    <item id="home"   type="button" img="home.png"  text="Home"/>
+    <item id="add"    type="button" img="add.png"    text="Upload"/>
+    <item id="delete" type="button" img="delete.png" text="Delete"/>
+    <item id="logout" type="button" text="Logout"/>
+</toolbar>
