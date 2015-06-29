@@ -17,7 +17,7 @@ public class EmailService
 	private static String host = "smtp.gmail.com";
 	private static String port = "587";
 	private static String userName = "cis.helpcenter@gmail.com";
-	private static String password = "harveyspecter01";
+	private static String password = "password";
 	private static String toAddress ="cis.helpcenter@gmail.com";
 	public static boolean sendEmail(String subject, String message,String receiver)
 	{
