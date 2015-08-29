@@ -35,8 +35,8 @@ public class DropService
 {
 	private static DbxClient dbxClient;
 	private static String accessToken;
-	private static String clientId="s5x67zsjs7b8i15";
-	private static String clientSecret="evevu1o6hjao0ge";
+	private static String clientId="";
+	private static String clientSecret="";
 	private static String redirectURI="http://localhost:8080/DriveProject/AuthHandler";
 	private static String authenticationServerUrl="https://www.dropbox.com/1/oauth2/authorize";
 	private static String tokenEndpointUrl="https://api.dropbox.com/1/oauth2/token";
