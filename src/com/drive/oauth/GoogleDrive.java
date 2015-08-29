@@ -48,8 +48,8 @@ class Struct
 }
 public class GoogleDrive 
 {
-	private static String clientId="838574006339-pbr8epb99e4o69nc7qb4ahii740e6leg.apps.googleusercontent.com";
-	private static String clientSecret="yQXpfo-2sc81TKut3iLJ2Aw5";
+	private static String clientId="";
+	private static String clientSecret="";
 	private static String redirectURI="http://localhost:8080/DriveProject/AuthHandler";
 	private static String authenticationServerUrl="https://accounts.google.com/o/oauth2/auth";
 	private static String tokenEndpointUrl="https://accounts.google.com/o/oauth2/token";
