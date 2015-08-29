@@ -40,8 +40,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 public class OneDriveService 
 {
-	private static String clientId="000000004C14FF13";
-	private static String clientSecret="hIHhWXYiBsbBTHW0r0k7iCZPeU8YycZa";
+	private static String clientId="";
+	private static String clientSecret="";
 	private static String redirectURI="http://localhostred.com:8080/DriveProject/Hand";
 	private static String authenticationServerUrl="https://login.live.com/oauth20_authorize.srf";
 	private static String tokenEndpointUrl="https://login.live.com/oauth20_token.srf";
