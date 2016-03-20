@@ -24,14 +24,14 @@ Database - Microsoft SQL Server 2014  (May change it to MySql, later).
 
 2.)  OAuth 2.0 protocol is used for accessing resources from the above mentioned servers.
 
-3.)  $$$ The FileManager can improved a lot(from design point of view). Currently I am using DHTMLx Suite.
+3.)  $$$ The FileManager can be improved a lot(from design point of view). Currently I am using DHTMLx Suite.
 
 4.)  All the files received are first standardized to a common format so including more drive services(like AWS) is easier,   
      as we only need to  convert the input to that standard format(DriveFile.java).
      
 5.)  All the user related information that is needed during execution is also standardized(DriveUser.java), so we dont need to 
      worry about the service currently being used by the user.
-     Above two helps greatly when it comes to extended the project to include more services.
+     Above two helps greatly when it comes to extending the project to include more services.
      
 6.) Security
      The user password is stored in hashed form, after 1000 iterations of SHA1(Secure Hashing Algorithm).(Hasing+Salting)
